@@ -43,3 +43,9 @@ print("A metade do número é: ", metade)
 
 Exercício 6.
 
+anoNascimento = int(input("Digite o seu ano de nascimento: "))
+idade = 2023 - anoNascimento
+print("Você tem ou fará", idade,"nesse ano")
+
+Exercício 7.
+
