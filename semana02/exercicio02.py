@@ -25,3 +25,11 @@ curso = input("Digite seu curso: ")
 print("Olá meu nome é", nome,"sou do sexo", sexo,"tenho", idade,"anos e estudo", curso)
 
 Exercício 4.
+
+precoFabrica = float(input("Digite o preço de fabrica: "))
+valorAumento = precoFabrica * 30 / 100
+valorFinal = precoFabrica + valorAumento
+print("O valor final é de: ", valorFinal)
+
+Exercício 5.
+
