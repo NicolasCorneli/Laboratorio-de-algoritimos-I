@@ -49,3 +49,7 @@ print("Você tem ou fará", idade,"nesse ano")
 
 Exercício 7.
 
+totalCarros = int(input("Digite o total de carros: "))
+pneu = 395.40
+valorFinal = pneu * 4 * totalCarros
+print("O valor final é de: ", valorFinal)
