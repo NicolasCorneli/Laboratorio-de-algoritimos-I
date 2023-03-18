@@ -33,3 +33,13 @@ print("O valor final é de: ", valorFinal)
 
 Exercício 5.
 
+n1 = float(input("Digite um número: "))
+
+dobro = n1 * 2
+metade = n1 / 2
+
+print("O dobro do número é: ", dobro)
+print("A metade do número é: ", metade)
+
+Exercício 6.
+
