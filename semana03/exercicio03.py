@@ -1,4 +1,4 @@
-#Exemplo:
+#Exemplo.
 
 totalHoras = float(input("Digite o total de horas trabalhadas no mês: "))
 salario = totalHoras * 35
