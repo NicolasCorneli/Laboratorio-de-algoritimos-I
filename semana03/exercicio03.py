@@ -9,11 +9,18 @@ if salario < 1000.00:
 else:
     print("seu salário esse mês é de: R$", salario)
     
+#Faça um algoritmo que leia dois números distintos e apresente-os em ordem crescente.   
     
-    
-    
-    
-    
+n1 = float(input("Digite um número: "))
+n2 = float(input("Digite outro número: "))
+if n1 > n2:
+    print("A ordem crescente é: ", n2, n1)
+else:
+    print("A ordem crescente é: ", n1, n2)    
+ 
+#Faça um algoritmo que leia o ano de nascimento de uma pessoa e verifique se ela pode ou não votar (desconsidere o mês de nascimento).
+
+
     
     
     
