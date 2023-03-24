@@ -20,31 +20,41 @@ else:
  
 #Faça um algoritmo que leia o ano de nascimento de uma pessoa e verifique se ela pode ou não votar (desconsidere o mês de nascimento).
 
+anoNascimento = int(input("Digite seu ano de nascimento: "))
+z1 = 2023 - anoNascimento
+if z1 >= 18:
+    print("Você pode votar")
+else:
+    print("Você não pode votar")
+    
+#Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um algoritmo para ler o preço do litro da gasolina e o valor do pagamento, e exibir quantos litros ele conseguiu colocar no tanque.    
+    
+    valorBotar = float(input("Digite o valor que deseja botar: "))
+precoGasolina = 5.54
+qntdLitros = valorBotar / precoGasolina
 
+print("A quantidade de litros de gasolina que vai ser adicionada é: ", qntdLitros)
+    
+#Escreva um algoritmo em Python que dada a idade de uma pessoa, determine sua classificação:
+#maior de idade;
+#menor de idade;
+    
+idade = int(input("Digite sua idade: "))
+if idade >= 18:
+    print("Você é maior de idade")
+else:
+    print("Você é menor de idade")    
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+#Leia um número fornecido pelo usuário. Se esse número for positivo, apresente o dobro do valor digitado. Se o número for negativo, mostre uma mensagem dizendo que o número é inválido.
+
+
+n1 = float(input("Digite um número: "))
+dobro = n1 * 2
+if n1 >= 0:
+    print("O dobro do número digitado é: ", dobro)
+else:
+    print("Número inválido")
     
     
 #Faça um programa que receba a altura e o sexo de uma pessoa e calcule e mostre seu peso ideal, utilizando as seguintes formulas (onde ´ h corresponde a altura): 
