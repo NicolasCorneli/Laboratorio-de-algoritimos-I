@@ -63,3 +63,35 @@ else:
     print("Digite uma resposta válida")
     
     
+#Faça um algoritmo que leia dois valores. Posteriormente leia uma opção do menu:  
+#Somar os dois valores.
+#Subtrair os dois valores.
+#Multiplicar os dois valores.
+#Dividir os dois valores
+
+n1 = float(input("Digite o primeiro valor: "))
+n2 = float(input("Digite o segundo valor: "))
+
+print("1 - Somar os 2 valores")
+print("2 - Subtrair os 2 valores")
+print("3 - Multiplicar os 2 valores")
+print("4 - Dividir os 2 valores")
+
+opcao = int(input("Digite a opção desejada: "))
+if opcao == 1:
+    resposta = n1 + n2
+    print("A resposta é: ", resposta)
+elif opcao == 2:
+    resposta = n1 - n2
+    print("A resposta é: ", resposta)
+elif opcao == 3:
+    resposta = n1 * n2
+    print("A resposta é: ", resposta)
+elif opcao == 4:
+    resposta = n1 / n2
+    print("A resposta é: ", resposta)
+else:
+    print("Digite uma opção válida")
+
+    
+    
