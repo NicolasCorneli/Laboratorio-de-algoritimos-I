@@ -43,3 +43,23 @@ else:
     print("Digite uma opção válida")
     
     
+#Um professor quer fazer um algoritmo para testar se uma questão de múltipla escolha está certa. Para isso, leia a questão assinalada pelo aluno e verifique:
+#A - resposta errada
+#B - resposta certa
+#C - resposta errada
+#D - resposta errada
+
+resposta = input("Escolha a resposta: ").upper()
+
+if resposta == "A":
+    print("Resposta errada")
+elif resposta == "B":
+    print("Resposta certa")
+elif resposta == "C":
+    print("Resposta errada")
+elif resposta == "D":
+    print("Resposta errada")
+else:
+    print("Digite uma resposta válida")
+    
+    
