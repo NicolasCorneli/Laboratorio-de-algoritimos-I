@@ -62,3 +62,40 @@ elif media >= 0 and media < 4:
 #Faça um script que faça 5 perguntas para uma pessoa sobre um crime.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+
+kilo = float(input("Digite a quantidade de total de kilos: "))
+morangoKilo = float(input("Digite a quantidade de kilos de morangos: "))
+macaKilo = float(input("Digite a quantidade de kilos de maçãs: "))
+
+if kilo <= 5:
+    moKilo = morangoKilo * 2.50
+    maKilo = macaKilo * 1.80
+    valorCompra = maKilo + moKilo
+    print("O valor a ser pago é: ",valorCompra)
+elif kilo > 5:
+    moKilo = morangoKilo * 2.20
+    maKilo = macaKilo * 1.50
+    valorCompra = maKilo + moKilo
+    print("O valor a ser pago é: ",valorCompra)
+
+elif kilo >= 8 or valorCompra > 25:
+    valorNovo = valorCompra * 0.90
+    print("O Valor a ser pago é: ",valorNovo)
