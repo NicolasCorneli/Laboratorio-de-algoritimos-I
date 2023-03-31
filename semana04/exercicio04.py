@@ -94,4 +94,23 @@ else:
     print("Digite uma opção válida")
 
     
-    
+    #Faça um algoritmo que apresente qual veículo o usuário pode dirigir. Com isso, solicite o tipo da carteira de motorista e apresente:
+
+print("A - Motos e Triciclos")
+print("B - Carros de passeio")
+print("C - Veículos de carga acima de 3.5 toneladas")
+print("D - Veículos com mais de 8 passageiros")
+print("E - Veículos com unidade acoplada acima de 6 toneladas")
+opcao = input("Digite a opção que corresponde ao seu tipo de carteira de motorista: ").upper()
+if opcao == "A":
+    print("Você pode dirigir os veículos correspondentes a opção A")
+elif opcao == "B":
+    print("Você pode dirigir os veículos correspondentes a opção B")
+elif opcao == "C":
+    print("Você pode dirigir os veículos correspondentes a opção C")
+elif opcao == "D":
+    print("Você pode dirigir os veículos correspondentes a opção D")
+elif opcao == "E":
+    print("Você pode dirigir os veículos correspondentes a opção E")
+else:
+    print("Digite uma opção válida (A,B,C,D ou E)")
