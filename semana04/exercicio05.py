@@ -59,4 +59,6 @@ elif media >= 4 and media < 6:
 elif media >= 0 and media < 4:
     print("Conceito E, suas notas foram ",n1,"e",n2,"sua média foi: ",media,"Você foi reprovado")
 
-#Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+#Faça um script que faça 5 perguntas para uma pessoa sobre um crime.
+
+
