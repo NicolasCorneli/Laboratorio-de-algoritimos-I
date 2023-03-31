@@ -61,22 +61,26 @@ elif media >= 0 and media < 4:
 
 #Faça um script que faça 5 perguntas para uma pessoa sobre um crime.
 
+print("Responda com 1 para sim e com 0 para não")
 
+p1 = int(input("Telefonou para a vítima? "))
+p2 = int(input("Esteve no local do crime? "))
+p3 = int(input("Mora perto da vítima? "))
+p4 = int(input("Devia para a vítima? "))
+p5 = int(input("Já trabalhou com a vítima? "))
 
+resposta = p1 + p2 + p3 + p4 + p5
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if resposta == 2:
+    print("Suspeita")
+elif resposta == 3 or resposta == 4:
+    print("Cúmplice")
+elif resposta == 5:
+    print("Assassino")
+elif resposta == 1 or resposta == 0:
+    print("Inocente")
+else:
+    print("Digite corretamente os números")
 
 
 #Uma fruteira está vendendo frutas com a seguinte tabela de preços:
