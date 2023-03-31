@@ -27,3 +27,17 @@ elif base != cateto1 and base != cateto2 and cateto2 != cateto1:
     print("O triângulo é escaleno")
     
     
+#Faça um algoritmo que leia as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média. Também solicite qual a % de frequência e aula, verifique e apresente a seguinte mensagem:
+
+n1 = float(input("Digite sua nota: "))
+n2 = float(input("Digite sua outra nota: "))
+media = (n1 + n2) / 2
+frequencia = int(input("Digite sua frequência (%): "))
+if media >= 7 and frequencia >= 75:
+    print("Você está aprovado")
+elif media >= 4 and media < 7 and frequencia >= 75:
+    print("Você está em exame")
+else:
+    print("Você está reprovado")
+    
+    
