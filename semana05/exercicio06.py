@@ -66,3 +66,44 @@ while numero != 0:
         qntdDigitada = qntdDigitada + 1
     elif numero == 0:
         print("A quantidade de vezes que o número 10 foi digitada é de: ",qntdDigitada)
+
+        
+#Faça um programa que receba a idade e o peso de 7 pessoas, calcule e mostre:
+
+
+qntdEntradas = 0
+somaIdade = 0
+somaPeso = 0
+maiorIdade = 0
+porcentagemIdade = 0
+print("Digite a idade e o peso das 7 pessoas")
+while qntdEntradas < 7:
+    idade = int(input("Digite sua idade: "))
+    somaIdade = somaIdade + idade
+    if idade >= 18:
+        maiorIdade = maiorIdade + 1
+    elif idade > 10 and idade < 30:
+        porcentagemIdade = porcentagemIdade + 1
+    peso = float(input("Digite seu peso: "))
+    somaPeso = somaPeso + peso
+    qntdEntradas = qntdEntradas + 1
+    print("Próxima pessoa: ")
+if porcentagemIdade == 7:
+    print("100% das pessoas estão entre 10 e 30 anos")
+elif porcentagemIdade == 6:
+    print("85.7% das pessoas estão entre 10 e 30 anos")
+elif porcentagemIdade == 5:
+    print("71.4% das pessoas estão entre 10 e 30 anos")
+elif porcentagemIdade == 4:
+    print("57.1% das pessoas estão entre 10 e 30 anos")
+elif porcentagemIdade == 3:
+    print("42.8% das pessoas estão entre 10 e 30 anos")
+elif porcentagemIdade == 2:
+    print("28.5% das pessoas estão entre 10 e 30 anos")
+elif porcentagemIdade == 1:
+    print("14.2% das pessoas estão entre 10 e 30 anos")
+else:
+    print("0% das pessoas estão entre 10 e 30 anos")
+mediaIdade = somaIdade / 7
+print("A média das idades é: ",mediaIdade)
+print("A quantidade de pessoas maiores de idade é: ",maiorIdade)
