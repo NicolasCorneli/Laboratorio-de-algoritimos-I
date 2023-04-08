@@ -53,3 +53,16 @@ while opcao != 4:
         print("Até a próxima!")
     else:
         print("Digite uma opção válida")
+
+        
+#Fazer um algoritmo que leia diversos números e mostre quantas vezes o número 10 foi digitado. O laço de repetição deve parar quando o usuário digitar 0. 
+
+
+qntdDigitada = 0
+numero = 1
+while numero != 0:
+    numero = float(input("Digite um número: "))
+    if numero == 10:
+        qntdDigitada = qntdDigitada + 1
+    elif numero == 0:
+        print("A quantidade de vezes que o número 10 foi digitada é de: ",qntdDigitada)
