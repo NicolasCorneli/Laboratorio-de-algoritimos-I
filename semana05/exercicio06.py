@@ -87,7 +87,7 @@ while qntdEntradas < 7:
     peso = float(input("Digite seu peso: "))
     somaPeso = somaPeso + peso
     qntdEntradas = qntdEntradas + 1
-    print("Próxima pessoa: ")
+    print("-------------")
 if porcentagemIdade == 7:
     print("100% das pessoas estão entre 10 e 30 anos")
 elif porcentagemIdade == 6:
