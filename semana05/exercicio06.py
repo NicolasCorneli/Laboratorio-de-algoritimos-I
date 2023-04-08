@@ -82,7 +82,7 @@ while qntdEntradas < 7:
     somaIdade = somaIdade + idade
     if idade >= 18:
         maiorIdade = maiorIdade + 1
-    elif idade > 10 and idade < 30:
+    if idade > 10 and idade < 30:
         porcentagemIdade = porcentagemIdade + 1
     peso = float(input("Digite seu peso: "))
     somaPeso = somaPeso + peso
