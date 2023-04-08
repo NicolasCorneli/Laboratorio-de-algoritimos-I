@@ -52,4 +52,4 @@ while opcao != 4:
     elif opcao == 4:
         print("Até a próxima!")
     else:
-        print("Digite um opção valida")
+        print("Digite uma opção válida")
