@@ -127,3 +127,18 @@ while qntdPessoas < 10:
 media = somaSalario / 10
 print("A média dos salários é: ",media)
 print("A quantidade de muheres com salário até R$100,00 é: ",qntdMulheresSalario)
+
+
+
+#Faça um programa que receba a idade de dez pessoas e que calcule e mostre a quantidade de pessoas com idade maior ou igual a 18 anos.
+
+
+qntdPessoas = 0
+qntdPessoasIdade = 0
+while qntdPessoas < 10:
+    qntdPessoas = qntdPessoas + 1
+    idade = int(input("Digite sua idade: "))
+    print("-----------------------")
+    if idade >= 18:
+        qntdPessoasIdade = qntdPessoasIdade + 1
+print("A quantidade de pessoas com idade maior ou igual a 18 é: ",qntdPessoasIdade)
