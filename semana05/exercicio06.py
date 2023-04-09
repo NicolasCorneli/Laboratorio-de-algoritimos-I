@@ -142,3 +142,15 @@ while qntdPessoas < 10:
     if idade >= 18:
         qntdPessoasIdade = qntdPessoasIdade + 1
 print("A quantidade de pessoas com idade maior ou igual a 18 é: ",qntdPessoasIdade)
+
+
+
+#Faça um programa que receba dez números e usando laços de repetição calcule e mostre a quantidade de números entre 30 e 90. 
+
+
+qntdNumeros = 0
+while qntdNumeros < 10:
+    numeros = float(input("Digite um número: "))
+    if numeros > 30 and numeros < 90:
+        qntdNumeros = qntdNumeros + 1
+print("A quantidade de números maiores que 30 e menores que 90 é: ",qntdNumeros)
