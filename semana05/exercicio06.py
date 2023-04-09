@@ -107,3 +107,23 @@ else:
 mediaIdade = somaIdade / 7
 print("A média das idades é: ",mediaIdade)
 print("A quantidade de pessoas maiores de idade é: ",maiorIdade)
+
+
+#Foi feita uma pesquisa entre os 10 habitantes de uma região. Foram coletados os dados de idade, sexo (M/F) e salário. Faça um algoritmo que informe: 
+
+
+somaSalario = 0
+qntdPessoas = 0
+qntdMulheresSalario = 0
+while qntdPessoas < 10:
+    genero = input("Digite seu gênero: ").upper()
+    qntdPessoas = qntdPessoas + 1
+    idade = int(input("Digite sua idade: "))
+    salario = float(input("Digite seu salário: "))
+    somaSalario = somaSalario + salario
+    if salario <= 100 and genero == "FEMININO":
+        qntdMulheresSalario = qntdMulheresSalario + 1
+    print("--------------------------------")
+media = somaSalario / 10
+print("A média dos salários é: ",media)
+print("A quantidade de muheres com salário até R$100,00 é: ",qntdMulheresSalario)
