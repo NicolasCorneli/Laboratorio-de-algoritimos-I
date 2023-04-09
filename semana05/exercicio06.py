@@ -154,3 +154,38 @@ while qntdNumeros < 10:
     if numeros > 30 and numeros < 90:
         qntdNumeros = qntdNumeros + 1
 print("A quantidade de números maiores que 30 e menores que 90 é: ",qntdNumeros)
+
+
+
+#Em um prédio com 10 moradores há três elevadores denominados A, B e C. Para otimizar o sistema de controle dos elevadores, desenvolva um programa em que cada morador informa qual o elevador que utiliza com mais frequência (A, B ou C). 
+#O algoritmo deve contabilizar o total de pessoas que usa cada um dos elevadores e mostrar estes totais e suas respectivas porcentagens no final.
+
+
+qntdPessoas = 0
+elevadorA = 0
+elevadorB = 0
+elevadorC = 0
+while qntdPessoas < 10:
+    qntdPessoas = qntdPessoas + 1
+    print("1 - A")
+    print("2 - B")
+    print("3 - C")
+    elevador = int(input("Digite qual o elevador que utiliza com mais frequência: "))
+    if elevador == 1:
+        elevadorA = elevadorA + 1
+    elif elevador == 2:
+        elevadorB = elevadorB + 1
+    elif elevador == 3:
+        elevadorC = elevadorC + 1
+    else:
+        print("Digite um número válido")
+    print("-----------------------")
+aPorcentagem = elevadorA / 10
+aPorcentagem = aPorcentagem * 100
+bPorcentagem = elevadorB / 10
+bPorcentagem = bPorcentagem * 100
+cPorcentagem = elevadorC / 10
+cPorcentagem = cPorcentagem * 100
+print("A quantidade de pessoas que usam o elevador A é: ",elevadorA,",",aPorcentagem,"%" )
+print("A quantidade de pessoas que usam o elevador B é: ",elevadorB,",",bPorcentagem,"%")
+print("A quantidade de pessoas que usam o elevador C é: ",elevadorC,",",cPorcentagem,"%")
