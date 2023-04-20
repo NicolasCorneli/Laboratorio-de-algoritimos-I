@@ -17,3 +17,16 @@ print("A média dos valores entre os números digitados é: ",media)
 
 #Escreva um programa que imprima na tela a sequência de Fibonacci até o décimo termo utilizando o laço de repetição for.
 
+primeiro = 0
+segundo = 1
+for x in range(3,11):
+    proximo = primeiro + segundo
+    print(proximo)
+    primeiro = segundo
+    segundo = proximo
+    
+#Faça um algoritmo que leia 10 números inteiros e ao final apresente:
+#Quantidade de números pares digitados
+#Quantidade de números ímpares digitados
+#Quantidade de zeros digitados
+
