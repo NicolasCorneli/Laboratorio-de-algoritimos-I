@@ -30,3 +30,20 @@ for x in range(3,11):
 #Quantidade de números ímpares digitados
 #Quantidade de zeros digitados
 
+par = 0
+impar = 0
+zero = 0
+for x in range(1,11):
+    n = int(input("Digite um número: "))
+    if n %2 ==0:
+        par = par + 1
+    else:
+        impar = impar + 1
+    if n == 0:
+        zero = zero + 1
+print("Quantidade de números pares: ",par)
+print("Quantidade de números ímpares: ",impar)
+print("Quantidade de zeros: ",zero)
+
+#Foi realizada uma pesquisa de algumas características físicas da população de um certa região. Foram entrevistadas 15 pessoas e coletados os seguintes dados:
+
