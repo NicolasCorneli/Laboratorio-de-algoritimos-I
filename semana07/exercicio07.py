@@ -15,3 +15,5 @@ for x in range(primeiro+1,segundo):
     media = soma / contador
 print("A média dos valores entre os números digitados é: ",media)
 
+#Escreva um programa que imprima na tela a sequência de Fibonacci até o décimo termo utilizando o laço de repetição for.
+
