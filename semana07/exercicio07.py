@@ -47,3 +47,82 @@ print("Quantidade de zeros: ",zero)
 
 #Foi realizada uma pesquisa de algumas características físicas da população de um certa região. Foram entrevistadas 15 pessoas e coletados os seguintes dados:
 
+meninas = 0
+olhosAzuis = 0
+olhosCastanhos = 0
+olhosVerdes = 0
+loiros = 0
+castanhos = 0
+pretos = 0
+m = 0
+f = 0
+print("A- sexo: M (masculino) e F (feminino)")
+print("B- cor dos olhos: A (azuis), V (verdes) e C (castanhos)")
+print("C- cor dos cabelos: L (loiros), C (castanhos) e P (pretos)")
+print("D- idade")
+sexo = input("Digite seu genêro, M ou F: ").upper()
+corOlhos = input("Digite a cor de seus olhos, A, V ou C: ").upper()
+corCabelo = input("Digite a cor do seu cabelo, L, C ou P: ").upper()
+idade = int(input("Digite sua idade: "))
+if sexo == "F":
+    if corOlhos == "V":
+        if corCabelo == "L":
+            if idade > 18 and idade < 35:
+                meninas = meninas + 1
+maior = idade
+for x in range(1,15):
+    sexo = input("Digite seu genêro, M ou F: ").upper()
+    corOlhos = input("Digite a cor de seus olhos, A, V ou C: ").upper()
+    corCabelo = input("Digite a cor do seu cabelo, L, C ou P: ").upper()
+    idade = int(input("Digite sua idade: "))
+    if maior < idade:
+        maior = idade
+    if sexo == "F":
+            if corOlhos == "V":
+                if corCabelo == "L":
+                    if idade > 18 and idade < 35:
+                        meninas = meninas + 1
+    if corOlhos == "A":
+        olhosAzuis = olhosAzuis + 1
+    if corOlhos == "V":
+        olhosVerdes = olhosVerdes + 1
+    if corOlhos == "C":
+        olhosCastanhos = olhosCastanhos + 1
+    if corCabelo == "L":
+        loiros = loiros + 1
+    if corCabelo == "C":
+        castanhos = castanhos + 1
+    if corCabelo == "P":
+        pretos =  pretos + 1
+    if sexo == "M":
+        m = m + 1
+        f = f + 1
+olhosAzuisPorcentagem = olhosAzuis / 15
+olhosAzuisPorcentagem = olhosAzuisPorcentagem * 100
+olhosVerdesPorcentagem = olhosVerdes / 15
+olhosVerdesPorcentagem = olhosVerdesPorcentagem * 100
+olhosCastanhosPorcentagem = olhosCastanhos / 15
+olhosCastanhosPorcentagem = olhosCastanhosPorcentagem * 100
+cabeloLoiroPorcentagem = loiros / 15
+cabeloLoiroPorcentagem = cabeloLoiroPorcentagem * 100
+cabeloCastanhoPorcentagem = castanhos / 15
+cabeloCastanhoPorcentagem = cabeloCastanhoPorcentagem * 100
+cabeloPretoPorcentagem = pretos / 15
+cabeloPretoPorcentagem = cabeloPretoPorcentagem * 100
+porcentagemF = f / 15
+porcentagemF = porcentagemF * 100
+porcentagemM = m / 15
+porcentagemM = porcentagemM * 100
+print("A maior idade do grupo é: ",maior)
+print("A quantidade de indivíduos do sexo feminino, cuja idade está entre 18 e 35 anos e que tenham olhos verdes e cabelos loiros é: ",meninas)
+print("A porcentagem de pessoas com os olhos azuis: ",olhosAzuisPorcentagem)
+print("A porcentagem de pessoas com os olhos verdes: ",olhosVerdesPorcentagem)
+print("A porcentagem de pessoas com os olhos castanhos: ",olhosCastanhosPorcentagem)
+print("A porcentagem de cabelos loiros é: ",cabeloLoiroPorcentagem)
+print("A porcentagem de cabelos castanhos é: ",cabeloCastanhoPorcentagem)
+print("A porcentagem de cabelos pretos é: ",cabeloPretoPorcentagem)
+print("A porcentagem de pessoas do sexo masculino é: ",porcentagemM)
+print("A porcentagem de pessoas do sexo feminino é: ",porcentagemM)
+
+#Fazer um programa para encontrar todos os números pares entre 1 e 100.
+
