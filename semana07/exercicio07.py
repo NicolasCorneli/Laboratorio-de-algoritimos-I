@@ -147,3 +147,16 @@ for x in range(primeiro+1,segundo):
         
 #Utilizando a estrutura de repetição for, faça um programa em python que receba 10 números e conte quantos deles estão no intervalo [10,20] e quantos deles estão fora do intervalo, escrevendo estas informações.
 
+contadorDentro = 0
+contadorFora = 0
+for x in range(11,20):
+    n = int(input("Digite um número: "))
+    if n > 10 and n < 20:
+        contadorDentro = contadorDentro + 1
+    else:
+        contadorFora = contadorFora + 1
+print(contadorDentro,"número/os está/estão dentro do intervalo")
+print(contadorFora,"número/os está/estão fora do intervalo")
+
+#Uma empresa de pesquisa deseja saber qual jornal é mais lido em Santa Maria (A, B ou C). Faça um algoritmo que leia a opinião de 20 pessoas, ao final mostre a porcentagem de cada uma das revistas, em ordem crescente
+
