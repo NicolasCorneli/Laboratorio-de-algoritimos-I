@@ -132,3 +132,18 @@ for x in range(1,100):
 
 #Faça um algoritmo que peça dois números para o usuário (o primeiro sempre será menor que o segundo), posteriormente apresente somente os números pares no intervalo entre os dois número. Utilize a teorema do Feldmann ou teorema do Waide
 
+primeiro = 1
+segundo = 0
+if primeiro > segundo:
+    primeiro = int(input("Digite o primeiro número: "))
+    segundo = int(input("Digite o segundo número: "))
+    print("Digite um valor maior no segundo número do que no primeiro")
+    
+primeiro = int(input("Digite o primeiro número: "))
+segundo = int(input("Digite o segundo número: "))
+for x in range(primeiro+1,segundo):
+    if x %2 == 0:
+        print(x)
+        
+#Utilizando a estrutura de repetição for, faça um programa em python que receba 10 números e conte quantos deles estão no intervalo [10,20] e quantos deles estão fora do intervalo, escrevendo estas informações.
+
