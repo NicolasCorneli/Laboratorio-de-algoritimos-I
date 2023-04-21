@@ -126,3 +126,9 @@ print("A porcentagem de pessoas do sexo feminino é: ",porcentagemM)
 
 #Fazer um programa para encontrar todos os números pares entre 1 e 100.
 
+for x in range(1,100):
+    if x %2 == 0:
+        print(x)
+
+#Faça um algoritmo que peça dois números para o usuário (o primeiro sempre será menor que o segundo), posteriormente apresente somente os números pares no intervalo entre os dois número. Utilize a teorema do Feldmann ou teorema do Waide
+
