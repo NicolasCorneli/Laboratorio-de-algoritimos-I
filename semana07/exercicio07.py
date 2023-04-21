@@ -160,3 +160,29 @@ print(contadorFora,"número/os está/estão fora do intervalo")
 
 #Uma empresa de pesquisa deseja saber qual jornal é mais lido em Santa Maria (A, B ou C). Faça um algoritmo que leia a opinião de 20 pessoas, ao final mostre a porcentagem de cada uma das revistas, em ordem crescente
 
+a = 0
+b = 0
+c = 0
+for x in range(1,21):
+    jornal = input("Qual jornal é mais lido em Santa Maria ?, A, B ou C: ").upper()
+    if jornal == "A":
+        a = a + 1
+    elif jornal == "B":
+        b = b + 1
+    elif jornal == "C":
+        c = c + 1
+    else:
+        print("Digite uma opção válida")
+porcentagemA = a / 20
+porcentagemA = porcentagemA * 100
+porcentagemB = b / 20
+porcentagemB = porcentagemB * 100
+porcentagemC = c / 20
+porcentagemC = porcentagemC * 100
+
+#A > B > C
+#B > C > A
+#C > A > B
+#A > C > B
+#B > A > C
+#C > B > A
