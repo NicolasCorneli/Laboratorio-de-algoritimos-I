@@ -198,3 +198,11 @@ else:
 
 #Escreva um programa que coloque na tela meia árvore de natal com asteriscos. O número de ramos deverá ser introduzido pelo usuário.
 
+numero = 0
+ramos = int(input("Digite a quantidade de ramos da árvore de natal: "))
+for x in range(1,ramos+1):
+    numero = numero + 1
+    if x == numero:
+        x = "*"
+        x = x * numero
+        print(x)
