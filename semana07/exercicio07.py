@@ -164,7 +164,7 @@ a = 0
 b = 0
 c = 0
 for x in range(1,21):
-    jornal = input("Qual jornal é mais lido em Santa Maria ?, A, B ou C: ").upper()
+    jornal = input("Qual jornal você lê ?, A, B ou C: ").upper()
     if jornal == "A":
         a = a + 1
     elif jornal == "B":
@@ -180,9 +180,21 @@ porcentagemB = porcentagemB * 100
 porcentagemC = c / 20
 porcentagemC = porcentagemC * 100
 
-#A > B > C
-#B > C > A
-#C > A > B
-#A > C > B
-#B > A > C
-#C > B > A
+if a < b and b < c:
+    print(porcentagemA,porcentagemB,porcentagemC,",O jornal mais lido é o C, depois o B e por último o A")
+elif b < c and c < a:
+    print(porcentagemB,porcentagemC,porcentagemA,",O jornal mais lido é o A, depois o C e por último o B")
+elif c < a and a < b:
+    print(porcentagemC,porcentagemA,porcentagemB,",O jornal mais lido é o B, depois o A e por último o C")
+elif a < c and c < b:
+    print(porcentagemA,porcentagemC,porcentagemB,",O jornal mais lido é o B, depois o C e por último o A")
+elif b < a and a < c:
+    print(porcentagemB,porcentagemA,porcentagemC,",O jornal mais lido é o C, depois o A e por último o B")
+elif c < b and b < a:
+    print(porcentagemC,porcentagemB,porcentagemA,",O jornal mais lido é o A, depois o B e por último o C")
+else:
+    print("Todos os jornais são pela mesma quantidade de pessoas")
+    
+
+#Escreva um programa que coloque na tela meia árvore de natal com asteriscos. O número de ramos deverá ser introduzido pelo usuário.
+
