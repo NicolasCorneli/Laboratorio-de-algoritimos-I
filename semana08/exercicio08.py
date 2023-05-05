@@ -21,3 +21,19 @@ def dobroTriplo(valor):
 def main():
     dobroTriplo(valor)
 main()
+
+#mercado QUIOSQUE
+
+def laranjas():
+    qntdLaranjas = int(input("Digite quantas laranjas deseja comprar: "))
+    if qntdLaranjas > 12:
+        valor = 0.25
+        valorFinal = qntdLaranjas * valor
+        print(valorFinal)
+    else:
+        valor = 0.40
+        valorFinal = qntdLaranjas * valor
+        print(valorFinal)
+def main():
+    laranjas()
+main()
