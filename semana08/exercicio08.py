@@ -58,3 +58,45 @@ def main():
     situacao()
 main()
 
+#Faça um algoritmo que apresente o seguinte menu:
+
+def menu():
+    print("1 - Sacar")
+    print("2 - Depositar")
+    print("3 - Saldo")
+    print("4 - Sair")
+    opcao = int(input("Opção:"))
+    return opcao
+    
+def saque(saldo):
+    valorSaque = float(input("Digite um valor que deseja sacar: "))
+    saldo = saldo - valorSaque
+    if valorSaque > saldo:
+        print("Você não pode sacar esse valor")
+    return saldo
+
+def depositar(saldo):
+    deposito = float(input("Digite o valor que deseja depositar: "))
+    saldo = saldo + deposito
+    return saldo
+
+def verSaldo(saldo):
+    print("Seu saldo é:",saldo)
+
+def main():
+    saldo = 0
+    opcao = 0
+    while opcao != 4:
+        opcao = menu()
+        if opcao == 1:
+            saldo = saque(saldo) 
+        elif opcao == 2:
+            saldo = depositar(saldo)
+        elif opcao == 3:
+            verSaldo(saldo)    
+        elif opcao == 4:
+            print("Até logo")
+        else: 
+            print("Digite uma opção válida")
+main()
+
