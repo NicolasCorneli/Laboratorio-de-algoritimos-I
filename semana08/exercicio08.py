@@ -37,3 +37,24 @@ def laranjas():
 def main():
     laranjas()
 main()
+
+
+#Faça um algoritmo que leia cinco notas e faça a média das notas, após isso informe a situação do aluno:
+
+nota = 0
+media = 0
+for x in range(1,6):
+    notas = float(input("Digite sua nota: "))
+    nota = nota + notas
+media = nota / 5
+def situacao():
+    if media >= 7:
+        print("Aprovado!")
+    elif media >= 4 and media < 7:
+        print("Exame!")
+    else:
+        print("Reprovado!")
+def main():
+    situacao()
+main()
+
