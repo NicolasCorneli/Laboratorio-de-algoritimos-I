@@ -100,3 +100,16 @@ def main():
             print("Digite uma opção válida")
 main()
 
+#Faça um programa com uma função chamada somaImposto.
+
+def somaImposto(taxaImposto,custo):
+    custo = float(input("Digite o valor do produto: "))
+    imposto = custo * 5 / 100
+    taxaImposto = imposto + custo
+    print("O valor final do produto é:",taxaImposto)
+def main():
+    taxaImposto = 0
+    custo = 0
+    somaImposto(taxaImposto,custo)
+main()
+
