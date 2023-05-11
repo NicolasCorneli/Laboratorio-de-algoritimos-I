@@ -113,3 +113,30 @@ def main():
     somaImposto(taxaImposto,custo)
 main()
 
+#Faça um programa que converta da notação de 24 horas para a notação de 12 horas.
+
+def horario(hora12,sufixo):
+    if hora24 == 0:
+        hora12 = 12
+        sufixo = "AM"
+    elif hora24 < 12:
+        hora12 = hora24
+        sufixo = "AM"
+    elif hora24 == 12:
+        hora12 = 12
+        sufixo = "PM"
+    elif hora24 > 12:
+        hora12 = hora24 - 12
+        sufixo = "PM"
+    return hora12,sufixo
+def zzzz(hora12,minutos,sufixo):
+    print(hora12,":",minutos,sufixo)
+hora24 = int(input("Digite a hora(0 - 23):"))
+minutos = int(input("Digite os minutos(0 - 59):"))
+def main():
+    hora12 = 0
+    sufixo = 0
+    hora12,sufixo = horario(hora12,sufixo)
+    zzzz(hora12,minutos,sufixo)
+main()
+
