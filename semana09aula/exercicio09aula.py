@@ -30,7 +30,7 @@ def media(mediaIdade,mediaPeso,idade,peso):
     mediaPeso = mediaPeso / 7
     print("media idade:",mediaIdade)
     print("media peso: ",mediaPeso)
-    
+    return idade
 def maiorIdade(idade,qntdMaior):
     if idade >= 18:
         qntdMaior = qntdMaior + 1
