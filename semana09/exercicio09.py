@@ -28,3 +28,15 @@ def main():
     x = int(input("Digite um número: "))
     fprimo(x)
 main()
+
+#Faça uma função que receba um número como parâmetro e retorne o seu dobro.
+
+def fdobro(x):
+    dobro = x * 2
+    print(dobro)
+
+def main():
+    dobro = 0
+    x = int(input("Digite um número: "))
+    fdobro(x)
+main()
