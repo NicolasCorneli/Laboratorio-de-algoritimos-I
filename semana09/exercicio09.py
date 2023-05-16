@@ -40,3 +40,15 @@ def main():
     x = int(input("Digite um número: "))
     fdobro(x)
 main()
+
+#Escreva uma função que receba uma temperatura em graus Celsius como parâmetro e retorne a temperatura equivalente em graus Fahrenheit.
+
+def fcelsius(x):
+    f = (x*9/5) + 32
+    print(f)
+
+def main():
+    f = 0
+    x = int(input("Digite a temperatura em graus celsius: "))
+    fcelsius(x)
+main()
