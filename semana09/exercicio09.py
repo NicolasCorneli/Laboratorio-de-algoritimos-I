@@ -52,3 +52,16 @@ def main():
     x = int(input("Digite a temperatura em graus celsius: "))
     fcelsius(x)
 main()
+
+#Faça uma função que receba um número como parâmetro e retorne a soma de todos os números naturais menores ou iguais a ele.
+
+def fsoma(x,soma):
+    for i in range(0,x+1):
+        soma = soma + i
+    print(soma)
+
+def main():
+    soma = 0
+    x = int(input("Digite um número: "))
+    fsoma(x,soma)
+main()
