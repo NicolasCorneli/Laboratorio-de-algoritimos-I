@@ -65,3 +65,31 @@ def main():
     x = int(input("Digite um número: "))
     fsoma(x,soma)
 main()
+
+
+#Uma Empresa deseja efetuar uma pesquisa de ibope sobre a aceitação de um certo produto lançado por ela no mercado.
+
+def fsimnao(produto,qntdpessoas,sim,nao):
+    produto = input("O produto deve estar no mercado ? ").upper()
+    if produto == "SIM":
+        qntdpessoas = qntdpessoas + 1
+        sim = sim + 1
+    elif produto == "NÃO":
+        qntdpessoas = qntdpessoas + 1
+        nao = nao + 1
+    else:
+        print("Responda com sim ou não")
+    return qntdpessoas,sim,nao
+def main():
+    produto = 0
+    qntdpessoas = 0
+    sim = 0
+    nao = 0
+    while qntdpessoas < 20:
+        qntdpessoas,sim,nao = fsimnao(produto,qntdpessoas,sim,nao)
+    print("A quantidade de pessoas que responderam com SIM é: ",sim)
+    print("A quantidade de pessoas que responderam com NÃO é: ",nao)
+main()
+
+#Uma empresa de pesquisa deseja saber qual jornal é mais lido em Santa Maria (A, B ou C).
+
