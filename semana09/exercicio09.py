@@ -93,3 +93,54 @@ main()
 
 #Uma empresa de pesquisa deseja saber qual jornal é mais lido em Santa Maria (A, B ou C).
 
+def abc(a,b,c,fjornal):
+    jornal = input("Qual jornal você lê ?, A, B ou C: ").upper()
+    if jornal == "A":
+        a = a + 1
+        fjornal = fjornal + 1
+    elif jornal == "B":
+        b = b + 1
+        fjornal = fjornal + 1
+    elif jornal == "C":
+        c = c + 1
+        jornal = fjornal + 1
+    else:
+        print("Digite uma opção válida")
+    return fjornal,a,b,c
+
+def porcentagem(a,b,c,porcentagemA,porcentagemB,porcentagemC):
+    porcentagemA = a / 20
+    porcentagemA = porcentagemA * 100
+    porcentagemB = b / 20
+    porcentagemB = porcentagemB * 100
+    porcentagemC = c / 20
+    porcentagemC = porcentagemC * 100
+    return porcentagemA,porcentagemB,porcentagemC
+
+def fcrescente(a,b,c,porcentagemA,porcentagemB,porcentagemC):
+    if a < b and b < c:
+        print(porcentagemA,porcentagemB,porcentagemC,",O jornal mais lido é o C, depois o B e por último o A")
+    elif b < c and c < a:
+        print(porcentagemB,porcentagemC,porcentagemA,",O jornal mais lido é o A, depois o C e por último o B")
+    elif c < a and a < b:
+        print(porcentagemC,porcentagemA,porcentagemB,",O jornal mais lido é o B, depois o A e por último o C")
+    elif a < c and c < b:
+        print(porcentagemA,porcentagemC,porcentagemB,",O jornal mais lido é o B, depois o C e por último o A")
+    elif b < a and a < c:
+        print(porcentagemB,porcentagemA,porcentagemC,",O jornal mais lido é o C, depois o A e por último o B")
+    elif c < b and b < a:
+        print(porcentagemC,porcentagemB,porcentagemA,",O jornal mais lido é o A, depois o B e por último o C")
+    return a,b,c,porcentagemA,porcentagemB,porcentagemC
+def main():
+    a = 0
+    b = 0
+    c = 0
+    fjornal = 0
+    porcentagemA = 0
+    porcentagemB = 0
+    porcentagemC = 0
+    while fjornal < 20:
+        fjornal,a,b,c = abc(a,b,c,fjornal)
+    porcentagemA,porcentagemB,porcentagemC = porcentagem(a,b,c,porcentagemA,porcentagemB,porcentagemC)
+    a,b,c,porcentagemA,porcentagemB,porcentagemC = fcrescente(a,b,c,porcentagemA,porcentagemB,porcentagemC)
+main()
