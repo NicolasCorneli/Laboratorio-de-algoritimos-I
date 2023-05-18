@@ -20,37 +20,49 @@ main()
 
 #Faça um programa que receba a idade e o peso de 7 pessoas, calcule e mostre:
 
-def media(mediaIdade,mediaPeso,idade,peso):
-    for x in range (1,8):
-        idade = int(input("Digite sua idade: "))
-        peso = float(input("Digite seu peso: "))
-        mediaIdade = mediaIdade + idade
-        mediaPeso = mediaPeso + peso
-    mediaIdade = mediaIdade / 7
-    mediaPeso = mediaPeso / 7
-    print("media idade:",mediaIdade)
-    print("media peso: ",mediaPeso)
-    return idade
+def idadepeso(mediaIdade,mediaPeso,qntdpessoas,idade,peso):
+    idade = int(input("Digite sua idade: "))
+    peso = float(input("Digite seu peso: "))
+    mediaIdade = mediaIdade + idade
+    mediaPeso = mediaPeso + peso
+    qntdpessoas = qntdpessoas + 1
+    return qntdpessoas,mediaIdade,mediaPeso,idade,peso
+
+def media(mediaIdade,mediaPeso):
+    mediaIdadeCalculada = mediaIdade / 7
+    mediaPesoCalculada = mediaPeso / 7
+    print("Média idade:", mediaIdadeCalculada)
+    print("Média peso:", mediaPesoCalculada)
+    return mediaIdadeCalculada, mediaPesoCalculada
+
 def maiorIdade(idade,qntdMaior):
     if idade >= 18:
         qntdMaior = qntdMaior + 1
-    print("quantidade de maiores de idade:",qntdMaior)
-    
+    print("Quantidade de maiores de idade:",qntdMaior)
+    return qntdMaior
+
 def porcentagem(idade,porcentagemIdades):
     if idade > 10 and idade < 30:
         porcentagemIdades = porcentagemIdades + 1
-    porcentagemIdades = porcentagemIdades / 7
-    porcentagemIdades = porcentagemIdades * 100
-    print("porcentagem das idades entre 10 e 30:",porcentagemIdades)
-    
+    return porcentagemIdades
+def por(porcentagemIdades,qntdpessoas):
+    porcentagemIdades = porcentagemIdades / qntdpessoas * 100
+    print("Porcentagem das idades entre 10 e 30:",porcentagemIdades)
+    return porcentagemIdades
+
 def main():
+    qntdpessoas = 0
     peso = 0
     idade = 0
     mediaPeso = 0
     mediaIdade = 0
     qntdMaior = 0
     porcentagemIdades = 0
-    idade = media(mediaIdade,mediaPeso,idade,peso)
-    maiorIdade(idade,qntdMaior)
-    porcentagem(idade,porcentagemIdades)
+    while qntdpessoas < 7:
+        qntdpessoas,mediaIdade,mediaPeso,idade,peso = idadepeso(mediaIdade, mediaPeso, qntdpessoas, idade, peso)
+        qntdMaior = maiorIdade(idade,qntdMaior)
+        porcentagemIdades = porcentagem(idade,porcentagemIdades)
+    porcentagemIdades = por(porcentagemIdades,qntdpessoas)
+    mediaIdade,mediaPeso = media(mediaIdade,mediaPeso)
+
 main()
