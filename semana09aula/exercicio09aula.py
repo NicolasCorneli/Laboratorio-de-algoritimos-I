@@ -66,3 +66,52 @@ def main():
     mediaIdade,mediaPeso = media(mediaIdade,mediaPeso)
 
 main()
+
+#Foi feita uma pesquisa entre os 10 habitantes de uma região. Foram coletados os dados de idade, sexo (M/F) e salário. Faça um algoritmo que informe:  
+
+def pesquisa(qntdpessoas,idade,sexo,salario,mediasalario):
+    idade = int(input("Digite sua idade: "))
+    sexo = input("Digite seu gênero(M/F): ").upper()
+    salario = float(input("Digite seu salário: "))
+    qntdpessoas = qntdpessoas + 1
+    mediasalario = mediasalario + salario
+    return qntdpessoas,idade,sexo,salario,mediasalario
+def media_salario_grupo(salario,qntdpessoas,mediasalario):
+    media = mediasalario / qntdpessoas
+    return media
+def maior_menor_idade(idade,maior,menor):
+    if idade > maior:
+        maior = idade
+    if idade < menor:
+        menor = idade
+    return maior,menor
+def mulheres_salario(sexo,salario,qntdmulheres):
+    if sexo == "F" and salario < 100:
+        qntdmulheres = qntdmulheres + 1
+    return qntdmulheres
+def main():
+    idade = 0
+    sexo = 0
+    salario = 0
+    qntdpessoas = 0
+    media = 0
+    maior = idade
+    menor = 1000000000000000000000000000000000000000000000
+    qntdmulheres = 0
+    mediasalario = 0
+    while qntdpessoas < 5:
+        qntdpessoas,idade,sexo,salario,mediasalario = pesquisa(qntdpessoas,idade,sexo,salario,mediasalario)
+        maior,menor = maior_menor_idade(idade,maior,menor)
+        qntdmulheres = mulheres_salario(sexo,salario,qntdmulheres)
+    media = media_salario_grupo(salario,qntdpessoas,mediasalario)
+    print("A média salarial é: ",media)
+    print("A maior idade é: ",maior)
+    print("A menor idade é: ",menor)
+    print("A quantidade de mulheres com salário até 100 reais é: ",qntdmulheres)
+main()
+
+
+#Em um prédio com 10 moradores há três elevadores denominados A, B e C.
+
+
+
