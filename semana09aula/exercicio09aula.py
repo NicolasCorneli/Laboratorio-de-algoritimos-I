@@ -113,5 +113,45 @@ main()
 
 #Em um prédio com 10 moradores há três elevadores denominados A, B e C.
 
+def elevador_mais_utilizado(qntdpessoas,elevador):
+    elevador = input("Qual elevador usa com mais frequência ?(A,B,C)").upper()
+    qntdpessoas = qntdpessoas + 1
+    return qntdpessoas,elevador
+    
+def abc(a,b,c,elevador):
+    if elevador == "A":
+        a = a + 1
+    elif elevador == "B":
+        b = b + 1
+    elif elevador == "C":
+        c = c + 1
+    return a,b,c
+
+def porcentagens(a,b,c,porcentagemA,porcentagemB,porcentagemC,qntdpessoas):
+    porcentagemA = a / qntdpessoas
+    porcentagemA = porcentagemA * 100
+    porcentagemB = b / qntdpessoas
+    porcentagemB = porcentagemB * 100
+    porcentagemC = c / qntdpessoas
+    porcentagemC = porcentagemC * 100
+    return porcentagemA,porcentagemB,porcentagemC
+
+def main():
+    elevador = 0
+    qntdpessoas = 0
+    a = 0
+    b = 0
+    c = 0
+    porcentagemC = 0
+    porcentagemB = 0
+    porcentagemA = 0
+    while qntdpessoas < 10:
+        qntdpessoas,elevador = elevador_mais_utilizado(qntdpessoas,elevador)
+        a,b,c = abc(a,b,c,elevador)
+    porcentagemA,porcentagemB,porcentagemC = porcentagens(a,b,c,porcentagemA,porcentagemB,porcentagemC,qntdpessoas)
+    print("A quantidade de pessoas que usa o elevador A é: ",a,porcentagemA,"%")
+    print("A quantidade de pessoas que usa o elevador B é: ",b,porcentagemB,"%")
+    print("A quantidade de pessoas que usa o elevador C é: ",c,porcentagemC,"%")
+main()
 
 
