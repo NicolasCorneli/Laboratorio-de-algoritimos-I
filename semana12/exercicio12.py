@@ -42,12 +42,9 @@ main()
 
 #Escreva um programa que cria um array com 5 números inteiros digitados pelo usuário. Em seguida, encontre e exiba o maior e o menor número do array e suas respectivas posições. 
 
-
 def y(lista,maior,menor):
     for x in range(1,5):
         n = int(input("Digite um número: "))
-        menor = n
-        maior = n
         lista.append(n)
 def u(lista,maior,menor):
     for x in lista:
