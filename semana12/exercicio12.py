@@ -15,7 +15,7 @@
 #Escreva um programa que solicita ao usuário que insira 5 números inteiros e armazene-os em um array. Em seguida, calcule e exiba a soma e a média dos números.
 
 def y(lista):
-    for x in range(1,6):
+    for x in range(0,5):
         n = int(input("Digite um número: "))
         lista.append(n)
 def u(lista,media,soma):
@@ -43,7 +43,7 @@ main()
 #Escreva um programa que cria um array com 5 números inteiros digitados pelo usuário. Em seguida, encontre e exiba o maior e o menor número do array e suas respectivas posições. 
 
 def y(lista,maior,menor):
-    for x in range(1,5):
+    for x in range(0,4):
         n = int(input("Digite um número: "))
         lista.append(n)
 def u(lista,maior,menor):
