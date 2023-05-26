@@ -139,3 +139,45 @@ main()
 
 #Escreva um algoritmo que contenha um array e apresente o seguinte menu:
 
+def menu():
+    print("1- Inserir item")
+    print("2- Listar itens")
+    print("3- Retirar item")
+    print("4- Retirar todos os itens")
+    print("5- Sair")
+    opc = int(input("Digite uma opção: "))
+    return opc
+    
+def inserir(lista):
+        n = int(input("Digite números pares para inserir na lista: "))
+        if n %2 == 0:
+            lista.append(n)
+        else:
+            print("ERRO! Digite somente números pares!")
+            n = menu()
+def retirar(lista):
+    n = int(input("Digite um número para retirar da lista: "))
+    lista.remove(n)
+
+def retirarTodos(lista):
+    for x in lista:
+        lista.remove(x)
+
+def main():
+    opc = 0
+    lista = []
+    while opc != 5:
+        opc = menu()
+        if opc == 1:
+            inserir(lista)
+        elif opc == 2:
+            print(lista)
+        elif opc == 3:
+            retirar(lista)
+        elif opc == 4:
+            retirarTodos(lista)
+        elif opc == 5:
+            print("Goodbye!")
+        else:
+            print("Digite uma opção válida")
+main()
