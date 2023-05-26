@@ -81,31 +81,19 @@ main()
 
 #Escreva um programa que cria um array com 10 números inteiros aleatórios no intervalo de 1 a 100. Em seguida, exiba apenas os números pares. Utilize a função rand
 
+def y(lista):
+    for x in range(0,10):
+        n = int(input("Digite algum número entre 1 e 100: "))
+        if n <= 1 or n >= 100:
+            print("Digite um número entre 1 e 100")
+        elif n %2 == 0:
+            lista.append(n)
+    print("Os números pares entre 1 e 100 digitados são:",lista)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def main():
+    lista = []
+    y(lista)
+main()
 
 #Escreva um programa que cria um array com 5 valores inteiros digitados pelo usuário. Em seguida, solicite ao usuário que digite um número e verifique se esse número está presente no array.
 
