@@ -1,7 +1,7 @@
 #Faça um algoritmo que leia 10 valores distintos. Ao final apresente quantos valores são maiores que 100.
 
 def y(valores):
-    for x in range (0,10):
+    for x in range (1,11):
         valor = int(input("Digite um valor: "))
         valores.append(valor)
 def z(valores,qntdMaiores):
