@@ -97,29 +97,22 @@ main()
 
 #Escreva um programa que cria um array com 5 valores inteiros digitados pelo usuário. Em seguida, solicite ao usuário que digite um número e verifique se esse número está presente no array.
 
+def y(lista):
+    for x in range(0,5):
+        n = int(input("Digite um número: "))
+        lista.append(n)
+def u(lista):
+    zz = int(input("Verificar se o número está presente na lista: "))
+    if zz in lista:
+        print("O número está presente na lista")
+    else:
+        print("O número não está presente na lista")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def main():
+    lista = []
+    y(lista)
+    u(lista)
+main()
 
 #Escreva um programa que cria um array com 10 números inteiros aleatórios no intervalo de 1 a 50. Em seguida, exiba a quantidade de números pares e a quantidade de números ímpares no array.
 
