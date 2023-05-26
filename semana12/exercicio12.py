@@ -34,12 +34,6 @@ def main():
     
 main()   
 
-
-
-
-
-
-
 #Escreva um programa que cria um array com 5 números inteiros digitados pelo usuário. Em seguida, encontre e exiba o maior e o menor número do array e suas respectivas posições. 
 
 def y(lista,maior,menor):
@@ -64,3 +58,99 @@ def main():
     y(lista,maior,menor)
     u(lista,maior,menor)
 main()
+#Escreva um programa que cria dois arrays de tamanho igual, preenchidos com números inteiros digitados pelo usuário. Em seguida, crie um terceiro array que contenha a soma dos elementos correspondentes dos arrays anteriores.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Escreva um programa que cria um array com 10 números inteiros aleatórios no intervalo de 1 a 100. Em seguida, exiba apenas os números pares. Utilize a função rand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Escreva um programa que cria um array com 5 valores inteiros digitados pelo usuário. Em seguida, solicite ao usuário que digite um número e verifique se esse número está presente no array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Escreva um programa que cria um array com 10 números inteiros aleatórios no intervalo de 1 a 50. Em seguida, exiba a quantidade de números pares e a quantidade de números ímpares no array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Escreva um algoritmo que contenha um array e apresente o seguinte menu:
+
