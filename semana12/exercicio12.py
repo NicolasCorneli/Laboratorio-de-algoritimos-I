@@ -116,22 +116,26 @@ main()
 
 #Escreva um programa que cria um array com 10 números inteiros aleatórios no intervalo de 1 a 50. Em seguida, exiba a quantidade de números pares e a quantidade de números ímpares no array.
 
+def y(lista,pares,impares):
+    for x in range(0,10):
+        n = int(input("Digite algum número entre 1 e 50: "))
+        if n <= 1 or n >= 50:
+            print("Digite um número entre 1 e 50")
+        else:
+            lista.append(n)
+            if n %2 == 0:
+                pares = pares + 1
+            else:
+                impares = impares + 1
+    print("A quantidade de números pares na lista é: ",pares)
+    print("A quantidade de números ímpares na lista é: ",impares)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def main():
+    pares = 0
+    impares = 0
+    lista = []
+    y(lista,pares,impares)
+main()
 
 #Escreva um algoritmo que contenha um array e apresente o seguinte menu:
 
