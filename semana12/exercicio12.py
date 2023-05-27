@@ -60,24 +60,34 @@ def main():
 main()
 #Escreva um programa que cria dois arrays de tamanho igual, preenchidos com números inteiros digitados pelo usuário. Em seguida, crie um terceiro array que contenha a soma dos elementos correspondentes dos arrays anteriores.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def y(lista1):
+    for x in range(0,5):
+        n = int(input("Digite um número para botar na primeira lista: "))
+        lista1.append(n)
+def u(lista2):
+    for x in range(0,5):
+        n = int(input("Digite um número para botar na segunda lista: "))
+        lista2.append(n)
+def g(lista1,lista2,lista3):
+    a = lista1[0] + lista2[0]
+    lista3.append(a)
+    b = lista1[1] + lista2[1]
+    lista3.append(b)
+    c = lista1[2] + lista2[2]
+    lista3.append(c)
+    d = lista1[3] + lista2[3]
+    lista3.append(d)
+    e = lista1[4] + lista2[4]
+    lista3.append(e)
+    print(lista3)
+def main():
+    lista1 = []
+    lista2 = []
+    lista3 = []
+    y(lista1)
+    u(lista2)
+    g(lista1,lista2,lista3)
+main()
 
 #Escreva um programa que cria um array com 10 números inteiros aleatórios no intervalo de 1 a 100. Em seguida, exiba apenas os números pares. Utilize a função rand
 
