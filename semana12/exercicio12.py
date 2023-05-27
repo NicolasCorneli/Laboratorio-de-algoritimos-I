@@ -1,16 +1,19 @@
 #Escreva um programa que cria um array com os números de 1 a 10 e os imprime na ordem inversa.
 
+def y(lista):
+    for x in range(0,10):
+        lista.append(x)
+    print(lista)
+def reverso(lista):
+    for x in lista:
+        rev = lista[::-1]
+    print(rev)
 
-
-
-
-
-
-
-
-
-
-
+def main():
+    lista = []
+    y(lista)
+    reverso(lista)
+main()
 
 #Escreva um programa que solicita ao usuário que insira 5 números inteiros e armazene-os em um array. Em seguida, calcule e exiba a soma e a média dos números.
 
