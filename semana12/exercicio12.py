@@ -173,8 +173,7 @@ def retirar(lista):
     lista.remove(n)
 
 def retirarTodos(lista):
-    for x in lista:
-        lista.remove(x)
+    del lista[:]
 
 def main():
     opc = 0
